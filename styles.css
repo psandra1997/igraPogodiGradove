@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 #ubaceniGradovi{
-    width: 200px;
+    width: 210px;
     height: 500px;
     border: 4px solid black;
-    padding: 15px;
-   
+    padding: 12px;   
+}
+.cityDiv{
+    display:flex ;
+    justify-content: space-between;
+}
+.cityName{
+    margin-right: 10px;
+    font-size: 12px;
+}
+.removeButton{
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
 }
 main{
     display: flex;
@@ -28,7 +40,7 @@ main{
 }
 #dugmeDiv{
     display: flex;
-   justify-content: end;
+    justify-content: end;
 }
 #gradoviBox{
     border: 4px solid black;
@@ -52,4 +64,28 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+#autocomplete ul{
+    border: 2px solid black;
+    padding: 5px 5px;
+}
+#autocomplete ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 5px 2px;
+    cursor: pointer;
+}
+#autocomplete ul li:hover{
+    background-color: lightblue;
+}
+#resultMain{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+#textResult{
+    color: rgb(87, 170, 112);
+    font-size: 15px;
 }
